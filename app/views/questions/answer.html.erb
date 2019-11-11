@@ -1,0 +1,22 @@
+<h1>Questions#answer</h1>
+<div class="you">
+  <p>"<%= @question %>"</p>
+  <p>-You</p>
+</div>
+
+<div class="coach">
+  <% if @question == "I am going to work" %>
+    <p><strong>Great!</strong></p>
+  <% elsif @question[-1] == "?" %>
+    <p><strong>Silly question, get dressed and go to work!</strong></p>
+  <% else %>
+    <p><strong>I don't care, get dressed and go to work!</strong></p>
+  <% end %>
+  <p>-Coach</p>
+</div>
+<small><%= link_to "ask another question", ask_path %></small>
+
+
+
+
+
